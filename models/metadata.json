@@ -1,0 +1,129 @@
+{
+  "modelo": "A_simples",
+  "config": {
+    "hidden": [
+      16
+    ]
+  },
+  "opcoes": {
+    "BAIRRO": [
+      "BARRA FUNDA",
+      "BELA VISTA",
+      "BELEM",
+      "BOM RETIRO",
+      "BRAS",
+      "BRASILANDIA",
+      "BUTANTA",
+      "CAMBUCI",
+      "CAMPO GRANDE",
+      "CAMPO LIMPO",
+      "CANINDE",
+      "CAPAO REDONDO",
+      "CASA VERDE",
+      "CENTRO",
+      "CENTRO HISTORICO DE SAO PAULO",
+      "CIDADE ADEMAR",
+      "CIDADE DUTRA",
+      "CIDADE TIRADENTES",
+      "CONSOLACAO",
+      "FREGUESIA DO O",
+      "GRAJAU",
+      "GUAIANASES",
+      "IPIRANGA",
+      "ITAIM BIBI",
+      "ITAIM PAULISTA",
+      "ITAQUERA",
+      "JABAQUARA",
+      "JARAGUA",
+      "JARDIM ANGELA",
+      "JARDIM PAULISTA",
+      "JD SAO LUIS",
+      "LAJEADO",
+      "LAPA",
+      "LIBERDADE",
+      "LIMAO",
+      "MOEMA",
+      "MOOCA",
+      "OUTROS",
+      "PARI",
+      "PENHA",
+      "PERDIZES",
+      "PINHEIROS",
+      "PIRITUBA",
+      "REPUBLICA",
+      "SACOMA",
+      "SANTA CECILIA",
+      "SANTANA",
+      "SANTO AMARO",
+      "SAO MATEUS",
+      "SAO MIGUEL",
+      "SAPOPEMBA",
+      "SAUDE",
+      "SE",
+      "TATUAPE",
+      "VILA ANDRADE",
+      "VILA CURUCA",
+      "VILA GUILHERME",
+      "VILA MARIA",
+      "VILA MARIANA",
+      "VILA PRUDENTE",
+      "VILA SONIA"
+    ],
+    "LOCAL": [
+      "BAR/BOTEQUIM",
+      "CASA",
+      "ESTACIONAMENTO PARTICULAR",
+      "GARAGEM OU ABRIGO DE RESIDENCIA",
+      "INTERIOR DE TRANSPORTE COLETIVO",
+      "INTERIOR DE VEICULO PARTICULAR",
+      "LOJAS",
+      "MERCADO",
+      "METROVIARIO E FERROVIARIO METROPOLITANO",
+      "ONIBUS/LOTACAO/TROLEBUS",
+      "OUTROS",
+      "PRACA",
+      "TRANSEUNTE",
+      "VEICULO EM MOVIMENTO",
+      "VIA PUBLICA"
+    ],
+    "DIA_SEMANA": [
+      "domingo",
+      "quarta-feira",
+      "quinta-feira",
+      "segunda-feira",
+      "sexta-feira",
+      "sábado",
+      "terça-feira"
+    ],
+    "PERIODO": [
+      "A noite",
+      "A tarde",
+      "De madrugada",
+      "Pela manhã"
+    ]
+  },
+  "classes": {
+    "0": "furto",
+    "1": "roubo"
+  },
+  "metricas_teste": {
+    "acuracia": 0.683,
+    "precision": 0.6213,
+    "recall": 0.6775,
+    "f1": 0.6482
+  },
+  "info_dados": {
+    "registros_brutos": 412527,
+    "apos_filtro_capital": 223785,
+    "apos_rotulo": 191697,
+    "apos_dedup": 163458,
+    "apos_limpeza": 162563,
+    "registros_modelo": 20000,
+    "proporcao_roubo": 0.431
+  },
+  "tamanhos": {
+    "treino": 14000,
+    "validacao": 3000,
+    "teste": 3000
+  }
+}

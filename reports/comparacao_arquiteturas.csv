@@ -1,0 +1,4 @@
+modelo,parametros,epocas,val_acuracia,val_precision,val_recall,val_f1,treino_acuracia,gap_treino_val
+A_simples,1425,24,0.685,0.6225,0.6837,0.6517,0.7011,0.0161
+B_media,7745,19,0.683,0.6196,0.6852,0.6508,0.7087,0.0257
+C_profunda,21633,23,0.678,0.6144,0.679,0.6451,0.7119,0.0339
