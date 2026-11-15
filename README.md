@@ -16,7 +16,7 @@ src/features.py        # atributos compartilhados entre treino e app
 src/data_prep.py       # leitura, filtro da capital, rótulo, deduplicação, atributos
 src/train.py           # treina 3 MLPs, compara, avalia no teste, salva artefatos
 src/make_synthetic.py  # dados SINTÉTICOS só para testar o pipeline
-notebook.ipynb         # notebook documentado (entrega 7.2)
+notebook_gs_roubos.ipynb # notebook documentado (entrega 7.2)
 models/                # mlp_best.keras, preprocessor.joblib, metadata.json
 reports/               # curvas, matriz de confusão, tabela comparativa
 data/raw/              # coloque aqui o arquivo da SSP (não versionar)
