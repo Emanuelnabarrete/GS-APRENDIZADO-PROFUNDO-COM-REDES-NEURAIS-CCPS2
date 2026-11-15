@@ -4,9 +4,9 @@ Classificador MLP que, dadas as características de uma ocorrência **já regist
 na capital paulista, estima se ela é mais compatível com **roubo** ou **furto**.
 **Não** prevê se um crime vai acontecer em determinado local/horário.
 
-- Link da aplicação web: **COLOQUE AQUI O LINK DO DEPLOY** (ex.: Streamlit Community Cloud)
+- Link da aplicação web: <https://gs-aprendizado-profundo-com-redes-neurais-ccps2.streamlit.app/>
 - Fonte dos dados: SSP-SP, Portal de Estatísticas — <https://www.ssp.sp.gov.br/estatistica/consultas> (seção "Bases de Dados")
-- Base/período usados: **PREENCHER** (ex.: "Celulares subtraídos 2024")
+- Base/período usados: Celulares subtraídos no período de 2024 
 
 ## Estrutura
 
@@ -25,14 +25,10 @@ data/raw/              # coloque aqui o arquivo da SSP (não versionar)
 ## Como obter os dados
 
 1. Acesse a página da SSP-SP acima, seção **Bases de Dados**, e baixe uma base (xlsx) do ano escolhido.
-2. Salve em `data/raw/` (pode ser mais de um arquivo; todas as abas com as colunas esperadas são lidas).
-3. Se os nomes das colunas forem diferentes, ajuste `ALIASES` em `src/data_prep.py`.
+2. Salve em `data/raw/` (utilizamos apenas a sheet com os dados crus).
 
 Colunas usadas: `CIDADE` (local do **fato**, não `NOME_MUNICIPIO`, que é o da delegacia), `BAIRRO`, `DATA_OCORRENCIA_BO`,
 `DESCR_SUBTIPOLOCAL`, `HORA_OCORRENCIA`/`DESCR_PERIODO`, `RUBRICA` (só para criar o rótulo; **nunca** entra como entrada da rede).
-
-> Sem a base real, `python src/make_synthetic.py` gera um CSV sintético para testar. Os resultados
-> com ele **não valem** para o relatório.
 
 ## Executar
 
@@ -56,5 +52,13 @@ Rode os comandos a partir da raiz do projeto.
 - **Arquiteturas:** A (16), B (64-32 + dropout), C (128-64-32 + dropout + L2); Adam, binary crossentropy, early stopping.
 
 ## Uso de IA generativa
+- Ajudou a resolver erros de instalação no Windows e a leitura da planilha grande da SSP. Assim como em erros de Sintaxe 
+- A compreender a abrangência da GS, nos apoiando para que não tenha nenhuma informação ou furo de informações visíveis por nós;
+- Nos apoiou em checar todas as informações na documentação e README no fim do projeto.
 
-Descreva aqui como a equipe usou IA (código, depuração, documentação) e o que validou por conta própria.
+
+## Integrantes 
+
+- Emanuel Nabarrete RM 566931
+- Luiz Eduardo RM 567417
+- Eduardo Luis RM 567662
